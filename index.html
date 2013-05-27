@@ -1,0 +1,203 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Montric - The Open Source Application Monitoring Tool!</title>
+    <meta name="author" content="Joachim Haagen Skeie">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css" media="screen" title="no title"
+          charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/master.css" type="text/css" media="screen" title="no title"
+          charset="utf-8">
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        /*_gaq.push(['_setAccount', 'UA-39888793-1']);
+
+         (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();*/
+    </script>
+</head>
+<body>
+<div id="header">
+    <div class="wrap">
+        <img src="img/montric_logo.png"/>
+
+        <p class="headertext">The Open Source Application Monitoring Tool!</p>
+    </div>
+</div>
+<div id="aboutArea" class="row-fluid">
+    <div class="wrap">
+        <div class="span7">
+            <h1>About</h1>
+
+            <p>Montric is an Open Source Application Monitoring Tool. As opposed to other profiling and application
+                monitoring solutions, Montric goes out of its way in order to stay out of your existing Metric-gathering
+                toolchain.</p>
+
+            <p>In a sense, Montric is Metric-source agnostic. This means that if you can measure it, you can monitor it
+                with Montric! Montric accept metrics via a standard HTTP POST, via its JSON-based API. Once the data has
+                been received by Montric, we won't lock you down to our services, and we wont impose a workflow on you
+                either. You can just as easily fetch your metrics back, either as-is or aggregated and use this data in
+                any way you'd like. This adheres to Montrics key goal, to be a truly Open Source solution from end to
+                end.</p>
+
+            <h1>Private Beta</h1>
+
+            <p>Montric will be entering private beta very soon! If you are interested in participating in the beta
+                period,
+                please do so by creating an account at <a href="http://live.montric.no">live.montric.no</a>. Indicate
+                what
+                you will be using Montric for, and you will be contacted once the private beta launches.
+            </p>
+
+            <p>
+                By participating in the Montric Private Beta you can expect:
+            <ul class="keyFeaturesList">
+                <li>Our utmost dedication in order to solve your application monitoring needs</li>
+                <li>Montric Live will be completely FREE during the beta period, and you will receive a life-time
+                    discount once the service graduates from beta to live!
+                </li>
+                <li>As a beta user you will be able to influence the features that make it into Montric 1.0</li>
+                <li>Full access to the internal wiki, where the Montric internals will be documented. The long-term goal
+                    is to open up this wiki for everyone!
+                </li>
+            </ul>
+            </p>
+        </div>
+        <div class="span5 righthand">
+            <h1>Key Features</h1>
+            <ul class="keyFeaturesList">
+                <li>Your metrics. Your Way! Montric does not impose on either your metrics gathering toolchain, or how
+                    you retireve and use your metrics afterwards!
+                </li>
+                <li>One API where you can both POST and GET your data</li>
+                <li>Montric keeps your data safe, while allowing you to fetch and aggregate your metrics</li>
+                <li>Receive alerts via Email or SMS when your applicaiton breaches your thresholds</li>
+                <li>Montric allows you to montior fine grained events and features within you application, right down to
+                    the response times of your important methods or functions
+                </li>
+                <li>View your metrics via a consolidated view, making it easy to compare metrics against one another
+                </li>
+                <li>Create chart groups where you can overlay multiple metrics onto the same chart</li>
+                <li>View your metrics in real time or in Historical mode</li>
+                <li>Set up Custom alerts for your monitored applications and services</li>
+                <li>Host your own Montric instance for free, or use our <a href="http://live.montric.no/">Montric Live
+                    Software-as-a-Service</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="usageArea" class="row-fluid">
+    <div class="wrap">
+        <div class="span4">
+            <h1>Montric Live</h1>
+
+            <p><a href=http://live.montric.no/">Montric Live</a> is the official hosted version of Montric, offered as
+                Software-as-a-Service. Montric Live runs on top of dedicated hardware located in a dedicated
+                server rack. During the beta period Montric Live is hosted on the following hardware:
+            <ul>
+                <li>Mars II Twin Blade pfSense Firewall (<a
+                        href="http://www.hacom.net/catalog/mars-ii-twin-blade-d525-pfsense-1u-server">link</a>)
+                </li>
+                <li>1x Intel Core i7 servers with 16GB RAM running Nginx for load balancing (<a href="http://nginx.org">link</a>)
+                </li>
+                <li>2x Intel Core i7 servers with 16GB RAM each running the Montric Application</li>
+                <li>A 5-node Riak cluster, each node holding up to 3TB of data with a data redundancy factor of 3. Each
+                    of the
+                    Riak nodes is a seperate MicroCloud node (<a
+                            href="http://www.supermicro.nl/products/nfo/MicroCloud.cfm">link</a>)
+                </li>
+                <li>Near the end of the beta perio, metrics will be backed up to Amazon S3, each hour</li>
+            </ul>
+            </p>
+            <p></p>
+        </div>
+        <div class="span4">
+            <h1>Host your own</h1>
+
+            <p>If you would rather host your own version of Montric behind your firewall, we offer a great solution for
+                that too. And the best part is that its 100% free, all the way from the database to the Graphical User
+                Interface! If we can't provide you with SaaS with capital S-es, then we want you to be happy and run
+                your own instance!</p>
+
+            <p>During the beta-period we will set up a dedicated downloads section with detailed installation
+                instructions.</p>
+
+            <h1>Source Code</h1>
+
+            <p>Montrics Source Code is available at GitHub in two repos:
+            <ul>
+                <li><a href="https://github.com/joachimhs/montric/">Montric</a></li>
+                <li><a href="https://github.com/joachimhs/MontricPlugins">Montric Plugins</a></li>
+            </ul>
+            </p>
+
+            <p>The source for this website is at: Montric Website</p>
+        </div>
+        <div class="span4">
+            <h1>Documentation</h1>
+
+            <p>We strive to provide as detailed documentation as possible, and we do rely on the community to provide
+                some of the contents. If you find Montrics documentation to be lacking, we sincirely appologize and
+                humbly ask that you would take the time to do what you can in order to amend the situation, either by
+                submitting a "missing documentation request", or by updating our documentation with a pull request!</p>
+
+            <p>During the beta-period we will set up a dedicated domain where Montric will be documented in detail: <a
+                    href="http://documentation.montric.no">Montric
+                Documentation</a>.</p>
+        </div>
+    </div>
+</div>
+<div id="footerArea" class="row-fluid">
+    <div class="wrap">
+        <div class="span6">
+            <h1>Support Montric</h1>
+
+            <p>Montric do need your support! There are various ways for you to support the Montric Platform. </p>
+
+            <p>Most of all, we would like you to support us by seeing the value in becoming a Montric Live customer, a
+                service that we believe and hope will be the best hosted Application Monitoring Tool available, while
+                retaining fair pricing! </p>
+
+            <p>Our virtual door is also always open if you would like to contribute by finding bugs and issuing bug
+                reports, answering questions on the mailing list and providing your expertise through submitting code to
+                the project.</p>
+
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="PBUEXJZG6YBTE">
+                <input type="image" src="https://www.paypalobjects.com/en_US/NO/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+        </div>
+        <div class="span1"></div>
+        <div class="span5">
+            <h1>Getting in Touch!</h1>
+
+            <p>You can find Montric through these services:
+
+            <ul>
+                <li>Twitter: <a href="https://twitter.com/MontricApp">@MontricApp</a></li>
+                <li>Email: <a href="mailto:mail@montric.no">mail@montric.no</a></li>
+            </ul>
+            </p>
+            <h1>Backed by Innovation Norway</h1>
+
+            <p>Montric is backed by <a href="http://www.innovasjonnorge.no/Contact-us/">Innovation Norway</a>, the
+                Norwegian Government's most important instrument for innovation and development of Norwegian enterprises
+                and industry. <img src="img/Innovation%20Norway.jpg"/></p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="span12 centerAligned boldFont">
+            Website Design and Development: <a href="http://www.haagen-software.no">Haagen Software AS</a>.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
